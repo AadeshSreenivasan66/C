@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main(void) {
+
+	printf("--------------------------------\n");
+	printf("Jawahar Navodaya Vidyalaya\n");
+	printf("Annual Report Card\n\n\n");
+
+	printf("Name:Sriyank Siddhartha\n");
+	printf("Standard: 10\n");
+	printf("Section: A\n\n\n");
+
+	int Mathematics;
+	int English;
+	int Hindi;
+	int Science;
+	int SocialScience;
+
+	printf("Marks Secured out of 100\n");
+
+	printf("Mathematics: ",Mathematics);
+	scanf("%d",&Mathematics);
+
+	printf("\nEnglish: ",English);
+	scanf("%d",&English);
+
+	printf("\nHindi: ",Hindi);
+	scanf("%d",&Hindi);
+
+	printf("\nScience: ",Science);
+	scanf("%d",&Science);
+
+	printf("\nSocial Science: ",SocialScience);
+	scanf("%d",&SocialScience);
+
+	int sum = Mathematics + English + Hindi + Science + SocialScience;
+	scanf("%d",&sum);
+	printf("\n\n\n Total Marks Secured:%d\n",sum);
+
+	if(sum >=450){
+		printf("Grade: A");
+	}else if(sum >= 400 || sum < 450){
+		printf("Grade: B");
+	}else if(sum >=350 || sum < 400){
+		printf("Grade: C");
+	}else if(sum >= 300 || sum < 350){
+		printf("Grade: D");
+	}else if(sum >= 299 || sum < 300){
+		printf("Grade: E");
+	}else{
+		printf("Grade: F");
+	}
+
+	printf("\n-------------------------");
+
+
+	return 0;
+}
